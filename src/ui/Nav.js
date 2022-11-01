@@ -49,7 +49,7 @@ function Nav(props) {
                     <div className="react-i">
                         <span className="material-symbols-outlined search" onClick={mouseOver}>search</span>
                         <Link to="/Account"><span className="material-symbols-outlined person">person</span></Link>
-                        <a href='/'><span className="material-symbols-outlined local_mall">local_mall</span></a>
+                        <span className="material-symbols-outlined local_mall" onClick={click}>local_mall</span>
                     </div>
                     <div className="L-gnb gnb">
                         <ul>
