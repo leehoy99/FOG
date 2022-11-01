@@ -21,7 +21,7 @@ function Main() {
         <div className="container">
             <Nav value={display} getDis={getDis}/>
             <header className="header">
-                <div className="header-img">
+                <div className="header-video">
                     <ReactPlayer 
                         className='video'
                         url={'https://cdn.shopify.com/videos/c/o/v/9d91782f640c475ba57648d9daae34e0.mp4'}
@@ -29,8 +29,8 @@ function Main() {
                         loop={true}
                         muted={true}
                         autoPlay={true}
-                        width={'100%'}
-                        height={'auto'}
+                        width={'100vw'}
+                        height={'100vh'}
                     />
                 </div>
                 <div className="header-text">
