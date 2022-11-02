@@ -27,10 +27,10 @@ function Shop() {
             <section className="items">
                 <div className="item">
                 <div className="img-box">
-                    <Link to="/Detail"><img src="Images/02.png" alt='/' /></Link>
+                    <Link to="/shop/detail"><img src="Images/02.png" alt='/' /></Link>
                 </div>
                 <div className="paragraph-box">
-                    <Link to="/Detail">
+                    <Link to="/shop/detail">
                     <p className="brand">FEAR OF GOD</p>
                     <p className="cloth">Full Zip Baseball Jersey</p>
                     <p className="price">₩976,200</p>
@@ -44,23 +44,6 @@ function Shop() {
                 <p>2</p>
                 <span className="right-arrow">→</span>
             </section>
-            <div className="bottom-menu">
-                <section className="contact-section">
-                <div className="contact">
-                    <h4 className="join">Join the Conversation</h4>
-                    <label htmlFor="email" />
-                    <input type="email" className="email" placeholder="EMAIL ADDRESS" onfocus="this.placeholder=''" />
-                </div>
-                </section>
-                <footer className="footer-section">
-                <div className="footer">
-                    <p><Link to="/contact">CONTACT</Link></p>
-                    <p><Link to="/client-services/shipping-policy">CLIENT SECVICE</Link></p>
-                    <p><Link to="/legal-notices/privacy-policy">LEGAL NOTICES</Link></p>
-                    <p><Link to="https://www.instagram.com/fearofgod/">SOCIAL</Link></p>
-                </div>
-                </footer>
-            </div>
         </div>
         <Bag value={display}/>
     </Fragment>

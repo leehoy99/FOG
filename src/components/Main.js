@@ -59,24 +59,6 @@ function Main() {
                 </a>
                 </div>
             </section>
-            <div className="bottom-menu">
-                <section className="contact-section">
-                <div className="contact">
-                    <h4 className="join">Join the Conversation</h4>
-                    <label htmlFor="email" />
-                    <input type="email" className="email" placeholder="EMAIL ADDRESS" onfocus="this.placeholder=''" />
-                </div>
-                </section>
-                <footer className="footer-section">
-                <div className="footer">
-                    <p><a href="/contact.html">CONTACT</a></p>
-                    <p><a href="/client-services/shipping-policy.html">CLIENT SECVICE</a></p>
-                    <p><a href="/legal-notices/privacy-policy.html">LEGAL NOTICES</a></p>
-                    <p><a href="https://www.instagram.com/fearofgod/">SOCIAL</a></p>
-                </div>
-                </footer>
-            </div>
-            <a href="/"><span className="top">↑</span></a>
         </div>
         <Bag value={display}/>
     </Fragment>

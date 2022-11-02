@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react'
 import Nav from '../ui/Nav';
 import Bag from '../bag/Bag';
 import '../css/account.css'
+import Bottom from '../ui/Bottom';
 
 function Account() {
     const [display, setDisplay] = useState('');
@@ -16,43 +17,27 @@ function Account() {
 
   return (
     <Fragment>
-            <Nav value={display} getDis={getDis}/>
-            <section class="account">
-                <div class="contents">
-                    <p>LOGIN</p>
-                    <form action="" class="account-form">
-                        <div class="email-box">
-                            <label for="email"></label>
-                            <input type="email" id="email" placeholder="EMAIL"/>
-                        </div>
-                        <div class="password-box">
-                            <label for="password"></label>
-                            <input type="password" id="password" placeholder="PASSWORD"/>
-                        </div>
-                        <input type="submit" value="SIGN IN" />
-                    </form>
-                    <a href="/"><p>FORGOT YOUR PASSWORD?</p></a>
-                    <input type="button" id="resist" value="REGISTER AN ACCOUNT"/> 
-                </div>
-            </section>
-            <div class="bottom-menu">
-                <section class="contact-section">
-                    <div class="contact">
-                        <h4 class="join">Join the Conversation</h4>
+        <Nav value={display} getDis={getDis}/>
+        <section class="account">
+            <div class="contents">
+                <p>LOGIN</p>
+                <form action="" class="account-form">
+                    <div class="email-box">
                         <label for="email"></label>
-                        <input type="email" class="email" placeholder="EMAIL ADDRESS" onfocus="this.placeholder=''" />
+                        <input type="email" id="email" placeholder="EMAIL"/>
                     </div>
-                </section>
-                <footer class="footer-section">
-                    <div class="footer">
-                        <p><a href="/contact.html">CONTACT</a></p>
-                        <p><a href="/client-services/shipping-policy.html">CLIENT SECVICE</a></p>
-                        <p><a href="/legal-notices/privacy-policy.html">LEGAL NOTICES</a></p>
-                        <p><a href="https://www.instagram.com/fearofgod/">SOCIAL</a></p>
+                    <div class="password-box">
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="PASSWORD"/>
                     </div>
-                </footer>
+                    <input type="submit" value="SIGN IN" />
+                </form>
+                <a href="/"><p>FORGOT YOUR PASSWORD?</p></a>
+                <input type="button" id="resist" value="REGISTER AN ACCOUNT"/> 
             </div>
-            <Bag value={display}/>
+        </section>
+        <Bottom />
+        <Bag value={display}/>
     </Fragment>
   )
 }

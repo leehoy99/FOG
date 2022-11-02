@@ -54,24 +54,24 @@ function Nav(props) {
                     <div className="L-gnb gnb">
                         <ul>
                             <li className="gnb1">
-                                <Link to="/Shop" className="fog" >FEAR OF GOD</Link>
+                                <Link to="/shop" className="fog" >FEAR OF GOD</Link>
                             </li>
                             <li className="gnb2">
-                                <Link to="/Athletics" className="ath">ATHLETIC</Link>
+                                <Link to="/athletics" className="ath">ATHLETIC</Link>
                             </li>
                             <li className="gnb3">
-                                <Link to className="esn">ESSENTIALS</Link>
+                                <Link to='/shop' className="esn">ESSENTIALS</Link>
                             </li>
                         </ul>
                     </div>
                     <div className="title">
-                        <Link to="/Main"><p>FEAR OF GOD</p></Link>
+                        <Link to="/main"><p>FEAR OF GOD</p></Link>
                     </div>
                     <div className="R-gnb gnb">
                         <ul>
                         <li className="gnb4"><p onMouseOver={mouseOver}>SEARCH</p>
                         </li>
-                        <li className="gnb5"><Link to="/Account">ACCOUNT</Link></li>
+                        <li className="gnb5"><Link to="/account">ACCOUNT</Link></li>
                         <li className="gnb6" onClick={click}><p>BAG</p></li>
                         </ul>
                     </div>
@@ -85,13 +85,13 @@ function Nav(props) {
                 <div className="L-gnb gnb">
                     <ul>
                     <li className="gnb1">
-                        <Link to="/Shop" className="fog">FEAR OF GOD</Link>
+                        <Link to="/shop" className="fog">FEAR OF GOD</Link>
                     </li>
                     <li className="gnb2">
-                        <Link to="/Athletics">ATHLETIC</Link>
+                        <Link to="/athletics">ATHLETIC</Link>
                     </li>
                     <li className="gnb3">
-                        <Link to="/Shop" className="esn">ESSENTIALS</Link>
+                        <Link to="/shop" className="esn">ESSENTIALS</Link>
                     </li>
                     </ul>
                 </div>

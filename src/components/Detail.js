@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import Bag from '../bag/Bag';
 import '../css/detail.css'
 import Nav from '../ui/Nav';
@@ -21,12 +22,12 @@ function Detail() {
     <Nav value={display} getDis={getDis}/>
         <section className="section1">
             <div className="item-img">
-            <img src="Images/bag-img.webp" alt='/' />
-            <img src="Images/bag-img.webp" alt='/' />
-            <img src="Images/bag-img.webp" alt='/' />
-            <img src="Images/bag-img.webp" alt='/' />
-            <img src="Images/bag-img.webp" alt='/' />
-            <img src="Images/bag-img.webp" alt='/' />
+            <img src="/images/bag-img.webp" alt='/' />
+            <img src="/images/bag-img.webp" alt='/' />
+            <img src="/images/bag-img.webp" alt='/' />
+            <img src="/images/bag-img.webp" alt='/' />
+            <img src="/images/bag-img.webp" alt='/' />
+            <img src="/images/bag-img.webp" alt='/' />
             </div>
             <div className="item-info">
             <p className="item-brand">ESSENTIALS</p>
@@ -109,71 +110,54 @@ function Detail() {
             <div className="items">
             <div className="item">
                 <div className="img-box">
-                <a href="/detail.html"><img src="Images/bag-img.webp" alt='/' /></a>
+                <Link to='/shop/detail'><img src="/images/bag-img.webp" alt='/' /></Link>
                 </div>
                 <div className="paragraph-box">
-                <a href="/detail.html">
+                <Link to='/shop/detail'>
                     <p className="brand">FEAR OF GOD</p>
                     <p className="cloth">Full Zip Baseball Jersey</p>
                     <p className="price">₩976,200</p>
-                </a>
+                </Link>
                 </div>
             </div>
             <div className="item">
                 <div className="img-box">
-                <a href="/detail.html"><img src="Images/bag-img.webp" alt='/' /></a>
+                <Link to='/shop/detail'><img src="/images/bag-img.webp" alt='/' /></Link>
                 </div>
                 <div className="paragraph-box">
-                <a href="/detail.html">
+                <Link to='/shop/detail'>
                     <p className="brand">FEAR OF GOD</p>
                     <p className="cloth">Full Zip Baseball Jersey</p>
                     <p className="price">₩976,200</p>
-                </a>
+                </Link>
                 </div>
             </div>
             <div className="item">
                 <div className="img-box">
-                <a href="/detail.html"><img src="Images/bag-img.webp" alt='/' /></a>
+                <Link to='/shop/detail'><img src="/images/bag-img.webp" alt='/' /></Link>
                 </div>
                 <div className="paragraph-box">
-                <a href="/detail.html">
+                <Link to='/shop/detail'>
                     <p className="brand">FEAR OF GOD</p>
                     <p className="cloth">Full Zip Baseball Jersey</p>
                     <p className="price">₩976,200</p>
-                </a>
+                </Link>
                 </div>
             </div>
             <div className="item">
                 <div className="img-box">
-                <a href="/detail.html"><img src="Images/bag-img.webp" alt='/' /></a>
+                <Link to='/shop/detail'><img src="/images/bag-img.webp" alt='/' /></Link>
                 </div>
                 <div className="paragraph-box">
-                <a href="/detail.html">
+                <Link to='/shop/detail'>
                     <p className="brand">FEAR OF GOD</p>
                     <p className="cloth">Full Zip Baseball Jersey</p>
                     <p className="price">₩976,200</p>
-                </a>
+                </Link>
                 </div>
             </div>
             </div>
         </section>
-        <div className="bottom-menu">
-            <section className="contact-section">
-            <div className="contact">
-                <h4 className="join">Join the Conversation</h4>
-                <label htmlFor="email" />
-                <input type="email" className="email" placeholder="EMAIL ADDRESS" onfocus="this.placeholder=''" />
-            </div>
-            </section>
-            <footer className="footer-section">
-            <div className="footer">
-                <p><a href="/contact.html">CONTACT</a></p>
-                <p><a href="/client-services/shipping-policy.html">CLIENT SECVICE</a></p>
-                <p><a href="/legal-notices/privacy-policy.html">LEGAL NOTICES</a></p>
-                <p><a href="https://www.instagram.com/fearofgod/">SOCIAL</a></p>
-            </div>
-            </footer>
-        </div>
     </div>
     <Bag value={display}/>
     </Fragment>
